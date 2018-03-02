@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "variables.scss";
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+.fullscreen.tall {
+  height: 100vh;
+  line-height: 100vh;
+}
+.fullscreen.short {
+  height: 70vh;
+  line-height: 70vh
+}
+.fullscreen h2 {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 90px !important;
+  text-overflow: ellipsis !important;
+}
+
+.fs-button{
+  transition: ease 0.2s;
+}
+.fs-button:hover {
+  background-color: $black !important;
+  cursor: pointer;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
